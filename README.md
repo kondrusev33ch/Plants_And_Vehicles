@@ -18,7 +18,7 @@ tqdm==4.61.2
 
 ## Start Instructions   
 Для начала нужно скачать все изображения из датасета и поместить их таким образом - data/58eed508-0789-4e76-938a-9318f749c49c.png  
-Затем запустить 'data_analysis.py'(не обязательно) -> 'vehicles_and_plants.py'  
+Затем запустить 'data_analysis.py'(не обязательно, т.к. в репозитории уже присутсвует 'data.csv') -> 'vehicles_and_plants.py'  
 
 ## Project Description   
 1. Анализ и подготовка данных 
