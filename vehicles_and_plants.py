@@ -222,7 +222,7 @@ if __name__ == '__main__':
 
     # Results
     # =======
-    # Генерируем таблицу с результатами с использованием тестого датасета
+    # Генерируем таблицу с результатами с использованием тестового датасета
     test_df['class'] = test_df['class'].map(lambda x: classes_map[x])
     test_df = test_df.sample(frac=1.0).reset_index(drop=True)
     prediction_percents = []
