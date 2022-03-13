@@ -56,7 +56,7 @@ if __name__ == '__main__':
 
     assert len(data_df_full['id'].unique()) == data_df_full.shape[0], 'id duplications found!'
 
-    # Проверим у каждого ли есть путь к изображению
+    # Проверим в каждом ли ряду есть путь к изображению
     print(data_df_full['file'].isna().sum())
     # => 0
 
@@ -127,11 +127,11 @@ if __name__ == '__main__':
     # => (357, 6)
 
     # Теперь посмотрим на изображения
-    # for file in plants_df['file'].sample(10):
-    #     show_image(file)
-    #
-    # for file in vehicles_df['file']:
-    #     show_image(file)
+    for file in plants_df['file'].sample(3):  # 3 для примера
+        show_image(file)
+    
+    for file in vehicles_df['file'].sample(3):
+        show_image(file)
 
     # Разные размеры, разные форматы и изображения не подходящие под категории машины и растения
 
@@ -179,5 +179,4 @@ if __name__ == '__main__':
 
     # Conclusion
     # ==========
-    # Проведён анализ данных при помощи которого мы выделили 2 датасете с машинами и растениями, которые
-    # будут использованы при обучении и тестировании модели
+    # Проведён анализ данных при помощи которого мы выделили группы с машинами и растениями
